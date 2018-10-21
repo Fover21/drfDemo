@@ -25,6 +25,11 @@ search_fields
 ## Serializer
 
 > 根据参数, 序列化器序列不同的字段  
+
+```
+    实例化序列化器时, 根据 某某字段 进行序列化指定需要的字段
+```
+
 > `source`, 自定义`method`, `null`, `blank`, `default`,
 > 如果drf字段不满足业务需求时, 自定义字段
 
