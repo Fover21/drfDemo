@@ -47,4 +47,7 @@ search_fields
 
 > 全局自定义响应（DRF框架级别）
 
-## 部分源码讲解
+## 部分源码说明
+
+> `many` 字段  
+> 序列化校验, write_only, read_only 区别等  
