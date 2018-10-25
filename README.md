@@ -31,6 +31,11 @@ search_fields
 ```
 
 > `source`, 自定义`method`, `null`, `blank`, `default`,
+
+```
+
+```
+
 > 如果drf字段不满足业务需求时, 自定义字段
 
 ```
@@ -46,6 +51,16 @@ search_fields
     
          路飞有设置套餐，如果价格有 0 的，就标识为免费, 且要获取价格套餐列表
 
+```
+
+> 序列化嵌套
+
+```
+    1、正向一访问一
+    2、正向一访问多
+    3、反向
+        1）设置 `related_name`
+        2）不设置 `related_name`
 ```
 
 ## Response
