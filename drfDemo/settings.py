@@ -129,4 +129,8 @@ STATIC_URL = '/static/'
 # MINE SETTINGS #
 #################
 
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'fixtures',),
+)
+
 CDN_PATH = "https://cdn1.luffycity.com"
