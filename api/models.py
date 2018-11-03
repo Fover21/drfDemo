@@ -16,3 +16,10 @@ class Article(models.Model):
     title = models.CharField(max_length=128, )
     img = models.CharField(max_length=255, )
     tags = models.ManyToManyField("Tag", limit_choices_to={"tag_type": 1})
+
+
+class Comment(models.Model):
+
+    parent = models.ForeignKey("self", null=True, blank=True)
+    title = models.CharField(max_length=32)
+    content = models.CharField(max_length=255)

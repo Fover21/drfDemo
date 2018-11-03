@@ -8,7 +8,8 @@ from django.conf.urls import include
 from api.views import (
     basic,
     view,
-    ser
+    ser,
+    demo,
 )
 
 # Basic CURD
@@ -34,4 +35,6 @@ urlpatterns = [
 
     url(r'^view/', include(view_urlpatterns)),
     url(r'^ser/', include(ser_urlpatterns)),
+
+    url(r'^tree/(?P<pk>\d+)/$', demo.TreeSerView.as_view())
 ]
